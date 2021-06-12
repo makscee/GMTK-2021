@@ -6,9 +6,9 @@ public static class BindMatrix
 {
     static readonly Dictionary<IBindable, Dictionary<IBindable, Bind>> Matrix = new Dictionary<IBindable, Dictionary<IBindable, Bind>>();
 
-    public static void AddBind(IBindable first, IBindable second, Vector2 offset, int strength)
+    public static Bind AddBind(IBindable first, IBindable second, Vector2 offset, int strength)
     {
-        if (IsBound(first, second)) return;
+        if (IsBound(first, second)) return GetBind(first, second);
         
         var b = new Bind(first, second, offset, strength);
         
@@ -22,6 +22,8 @@ public static class BindMatrix
             firstH.OnBind(b);
         if (second is IBindHandler secondH)
             secondH.OnBind(b);
+        
+        return b;
     }
 
     public static Bind GetBind(IBindable first, IBindable second)

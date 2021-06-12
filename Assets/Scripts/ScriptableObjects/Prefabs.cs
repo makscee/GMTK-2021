@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 [CreateAssetMenu(fileName = "Prefabs", menuName = "ScriptableObjects/Prefabs")]
 public class Prefabs : ScriptableObject
 {
-    public GameObject shapeBlock;
+    public GameObject shapeBlock, bindVisual;
     
     public static Prefabs Instance => GetInstance();
 

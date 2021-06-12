@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: GlobalConfig
   m_EditorClassIdentifier: 
   thrusterBindStr: 5
-  shapeBlockBindStr: 20
+  shapeBlockBindStr: 30
+  shapesBindStr: 15
+  bindBlock: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  bindPreview: {r: 0, g: 0.68235296, b: 0.7176471, a: 0.44705883}
+  bindShape: {r: 0, g: 0.68113214, b: 0.7169812, a: 0.87058824}

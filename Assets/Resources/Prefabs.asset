@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Prefabs
   m_EditorClassIdentifier: 
   shapeBlock: {fileID: 835400080566151287, guid: 7d3ac3a56ad9e3e42b0978066cd5249f, type: 3}
+  bindVisual: {fileID: 4945107583483799795, guid: 4b02b0cc773d476479e377715fe911a4, type: 3}

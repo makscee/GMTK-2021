@@ -4,7 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GlobalConfig", menuName = "ScriptableObjects/GlobalConfig")]
 public class GlobalConfig : ScriptableObject
 {
-    [SerializeField] public int thrusterBindStr, shapeBlockBindStr;
+    [SerializeField] public int thrusterBindStr, shapeBlockBindStr, shapesBindStr;
+    [SerializeField] public Color bindBlock, bindPreview, bindShape; 
     
     public static GlobalConfig Instance => GetInstance();
 

@@ -1,14 +1,9 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bind
 {
-    public const int BlockBindStrength = 5;
-    public const int BlockStaticBindStrength = 10;
-    public const int MouseBindStrength = 8;
-    public const int PulseBlockBindStrength = 14;
-    
+    public BindVisual visual;
     public Bind(IBindable fist, IBindable second, Vector2 offset, int strength)
     {
         First = fist;
@@ -45,5 +40,7 @@ public class Bind
     public void Break()
     {
         BindMatrix.RemoveBind(First, Second);
+        if (visual != null)
+            visual.Destroy();
     }
 }

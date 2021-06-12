@@ -21,7 +21,9 @@
             <e p="Block.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="ShapeBlock.cs" t="Include" />
+            <e p="ShapeBlockConnectionChecker.cs" t="Include" />
             <e p="ShapeBuilder.cs" t="Include" />
+            <e p="ShapeConnectionCheckerBase.cs" t="Include" />
           </e>
           <e p="CameraScript.cs" t="Include" />
           <e p="InputHandler.cs" t="Include" />

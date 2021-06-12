@@ -11,14 +11,4 @@ public class Player : Block
     {
         currentInputDir = dir;
     }
-    
-    public override void OnBeginDrag(PointerEventData eventData)
-    {
-        BindMatrix.AddBind(this, MouseBind.Get(), Vector2.zero, 10);
-    }
-
-    public override void OnEndDrag(PointerEventData eventData)
-    {
-        BindMatrix.RemoveBind(this, MouseBind.Get());
-    }
 }

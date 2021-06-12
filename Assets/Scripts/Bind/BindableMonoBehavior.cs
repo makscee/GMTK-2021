@@ -7,27 +7,30 @@ public class BindableMonoBehavior : MonoBehaviour, IBindable
     protected Vector2 Velocity;
     public Vector2 DesiredVelocity;
     public const float MaxAcceleration = 300;
-    protected virtual void Update()
+    protected virtual void FixedUpdate()
     {
         if (!Movable) return;
-        var maxSpeedChange = MaxAcceleration * Time.deltaTime;
+        var delta = Time.deltaTime;
+        var maxSpeedChange = MaxAcceleration * delta;
         
         foreach (var bind in BindMatrix.GetAllAdjacentBinds(this))
         {
-            var v = bind.GetTarget(this) - GetPosition();
+            if (bind.Strength == 0) continue;
+            var v = (bind.GetTarget(this) - GetPosition()) / 2;
             var f = v * (bind.Strength * Bind.StrengthMultiplier);
 
             DesiredVelocity += f;
         }
-        if (!IsAnchored)
-        {
-            const float radius = 0.1f;
-            const float speed = 1f;
-            var t = Time.time;
-            DesiredVelocity += new Vector2(Mathf.Cos(t * speed) * radius, Mathf.Sin(t * speed) * radius);
-        }
+        // if (!IsAnchored)
+        // {
+        //     const float radius = 0.1f;
+        //     const float speed = 1f;
+        //     var t = Time.time;
+        //     DesiredVelocity += new Vector2(Mathf.Cos(t * speed) * radius, Mathf.Sin(t * speed) * radius);
+        // }
+        
         Velocity = Vector2.MoveTowards(Velocity, DesiredVelocity, maxSpeedChange);
-        transform.position += (Vector3)Velocity * (Time.deltaTime);
+        transform.position += (Vector3)Velocity * delta;
         DesiredVelocity = Vector2.zero;
     }
 

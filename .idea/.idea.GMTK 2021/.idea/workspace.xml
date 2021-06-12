@@ -14,48 +14,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3037f6b4-c6e0-43da-9902-3a636428f552" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/Bind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindableAnchor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindableMonoBehavior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/IBindHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/IBindable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/MouseBind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/StaticAnchor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/ThrusterBind.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/ThrusterBind.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/Block.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/Block.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SharedObjects.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SharedObjects.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Thruster.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlockConnectionChecker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlockConnectionChecker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeConnectionCheckerBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeConnectionCheckerBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GMTK 2021/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ShapeBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ShapeBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GlobalConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GlobalConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bind/Bind.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/Bind.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bind/BindableMonoBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bind/BindableMonoBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blocks/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,9 +50,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindableMonoBehavior.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Block.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Input.cs" />
@@ -83,12 +58,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Bind/ThrusterBind.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Thruster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SharedObjects.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ConnectionDot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Line.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/Prefabs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindMatrix.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/Bind.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindVisual.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/GlobalConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeConnectionCheckerBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blocks/ShapeBlockConnectionChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bind/BindableMonoBehavior.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623491117633</updated>
-      <workItem from="1623491121151" duration="7347000" />
+      <workItem from="1623491121151" duration="17199000" />
     </task>
     <servers />
   </component>
