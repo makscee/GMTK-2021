@@ -5,6 +5,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Animator" t="Include">
+            <e p="Animator.cs" t="Include" />
+            <e p="Interpolator.cs" t="Include" />
+            <e p="Invoker.cs" t="Include" />
+            <e p="IUpdatable.cs" t="Include" />
+            <e p="OwnedUpdatable.cs" t="Include" />
+          </e>
+          <e p="Asteroid.cs" t="Include" />
           <e p="Bind" t="Include">
             <e p="Bind.cs" t="Include" />
             <e p="BindableAnchor.cs" t="Include" />
@@ -17,8 +25,11 @@
             <e p="StaticAnchor.cs" t="Include" />
             <e p="ThrusterBind.cs" t="Include" />
           </e>
+          <e p="BlackHole.cs" t="Include" />
           <e p="Blocks" t="Include">
             <e p="Block.cs" t="Include" />
+            <e p="OverlapChecker.cs" t="Include" />
+            <e p="PackedShape.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="ShapeBlock.cs" t="Include" />
             <e p="ShapeBlockConnectionChecker.cs" t="Include" />
@@ -26,14 +37,55 @@
             <e p="ShapeConnectionCheckerBase.cs" t="Include" />
           </e>
           <e p="CameraScript.cs" t="Include" />
+          <e p="EndScreen.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="InputHandler.cs" t="Include" />
+          <e p="Map" t="Include">
+            <e p="Sector.cs" t="Include" />
+            <e p="SectorMap.cs" t="Include" />
+          </e>
+          <e p="Marker.cs" t="Include" />
+          <e p="ParticleExplosion.cs" t="Include" />
           <e p="ScriptableObjects" t="Include">
             <e p="GlobalConfig.cs" t="Include" />
             <e p="Prefabs.cs" t="Include" />
           </e>
           <e p="SharedObjects.cs" t="Include" />
+          <e p="SoundsPlayer.cs" t="Include" />
           <e p="Thruster.cs" t="Include" />
           <e p="Utils.cs" t="Include" />
+          <e p="Vein.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
         </e>
       </e>
       <e p="GMTK 2021.sln" t="IncludeFlat" />

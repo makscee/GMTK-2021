@@ -6,11 +6,15 @@ public static class BindMatrix
 {
     static readonly Dictionary<IBindable, Dictionary<IBindable, Bind>> Matrix = new Dictionary<IBindable, Dictionary<IBindable, Bind>>();
 
-    public static Bind AddBind(IBindable first, IBindable second, Vector2 offset, int strength)
+    public static Bind AddBind(IBindable first, IBindable second, Vector2 offset, int strength, float maxLength = -1f)
     {
-        if (IsBound(first, second)) return GetBind(first, second);
+        if (IsBound(first, second))
+        {
+            Debug.Log($"existing bind");
+            return GetBind(first, second);
+        }
         
-        var b = new Bind(first, second, offset, strength);
+        var b = new Bind(first, second, offset, strength, maxLength);
         
         if (!Matrix.ContainsKey(first)) Matrix[first] = new Dictionary<IBindable, Bind>();
         if (!Matrix.ContainsKey(second)) Matrix[second] = new Dictionary<IBindable, Bind>();
@@ -35,6 +39,7 @@ public static class BindMatrix
     {
         if (!Matrix.ContainsKey(first) || !Matrix[first].ContainsKey(second)) return;
         var bind = Matrix[first][second];
+        bind.DestroyVisual();
         Matrix[first]?.Remove(second);
         Matrix[second]?.Remove(first);
         

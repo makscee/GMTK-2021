@@ -4,8 +4,10 @@ using Random = UnityEngine.Random;
 
 public class InputHandler : MonoBehaviour
 {
+    public bool isEnabled = true;
     void Update()
     {
+        if (!isEnabled) return;
         SharedObjects.instance.player.InputDir(GetDirection());
         if (Input.GetMouseButtonDown(1))
         {

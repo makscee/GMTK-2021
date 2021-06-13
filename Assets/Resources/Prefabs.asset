@@ -14,3 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shapeBlock: {fileID: 835400080566151287, guid: 7d3ac3a56ad9e3e42b0978066cd5249f, type: 3}
   bindVisual: {fileID: 4945107583483799795, guid: 4b02b0cc773d476479e377715fe911a4, type: 3}
+  shapeThrusterBlock: {fileID: 8941765966821596156, guid: 22458c5ecc397f745b0933da0b328594, type: 3}
+  asteroid: {fileID: 550442861988371254, guid: ec59570796b5bd340bf99c4f68c03772, type: 3}
+  packedShape: {fileID: 2352231626581383001, guid: 77f02295c1b33df41943b691ac7ecaae, type: 3}
+  vein5: {fileID: 796097088352994765, guid: c1f7bc2167a721f4ab83f3490ddb2362, type: 3}
+  vein10: {fileID: 3646965153611433936, guid: 3f2e483a355660e41889c6bd58588756, type: 3}
+  vein20: {fileID: 3272178242144150442, guid: ce20e6d94af69684e92687abcdb397c9, type: 3}
+  marker: {fileID: 1602331709827911181, guid: 9b1c0e7625fd6a040b6055ee66935260, type: 3}
+  explosion: {fileID: 7856001763322664479, guid: ff6b1b2d5c5bcbc48a469b2ee2ec48bc, type: 3}

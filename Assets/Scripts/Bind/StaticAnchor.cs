@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class StaticAnchor : BindableAnchor
 {
+    private StaticAnchor()
+    {
+    }
+
     public static IBindable Create(Vector2 position, bool isAnchor = true)
     {
         var anchor = new StaticAnchor();

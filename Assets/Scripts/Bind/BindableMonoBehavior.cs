@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BindableMonoBehavior : MonoBehaviour, IBindable
@@ -6,21 +7,23 @@ public class BindableMonoBehavior : MonoBehaviour, IBindable
 
     protected Vector2 Velocity;
     public Vector2 DesiredVelocity;
-    public const float MaxAcceleration = 300;
     protected virtual void FixedUpdate()
     {
         if (!Movable) return;
         var delta = Time.deltaTime;
-        var maxSpeedChange = MaxAcceleration * delta;
+        var maxSpeedChange = GlobalConfig.Instance.bindMaxAcc * delta;
         
+        var brokenBinds = new List<Bind>();
         foreach (var bind in BindMatrix.GetAllAdjacentBinds(this))
         {
             if (bind.Strength == 0) continue;
-            var v = (bind.GetTarget(this) - GetPosition()) / 2;
-            var f = v * (bind.Strength * Bind.StrengthMultiplier);
-
+            var v = (bind.GetTarget(this) - GetPosition()) / GlobalConfig.Instance.bindTargetDiv;
+            var f = v * (bind.Strength * GlobalConfig.Instance.bindStrMult);
+            if (bind.MaxLengthReached()) brokenBinds.Add(bind);
             DesiredVelocity += f;
         }
+
+        foreach (var bind in brokenBinds) bind.Break();
         // if (!IsAnchored)
         // {
         //     const float radius = 0.1f;

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - SharedObjects
+  - Block
+  - PlayerBlock
+  - Vein
+  - BlockOverlap
+  - ConnectionDot
   layers:
   - Default
   - TransparentFX

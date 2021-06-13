@@ -4,12 +4,13 @@ using UnityEngine;
 public class Bind
 {
     public BindVisual visual;
-    public Bind(IBindable fist, IBindable second, Vector2 offset, int strength)
+    public Bind(IBindable fist, IBindable second, Vector2 offset, int strength, float maxLength = -1f)
     {
         First = fist;
         Second = second;
         Offset = offset;
         Strength = strength;
+        MaxLength = maxLength;
     }
 
     public readonly IBindable First, Second;
@@ -17,8 +18,8 @@ public class Bind
     // first -> second
     public readonly Vector2 Offset;
 
-    public readonly int Strength;
-    public const int StrengthMultiplier = 3;
+    public int Strength;
+    public float MaxLength;
 
     public bool Used(IBindable obj)
     {
@@ -31,16 +32,25 @@ public class Bind
         Vector2 target;
         var firstPos = First.GetPosition();
         var secondPos = Second.GetPosition();
-        var selfPos = self.GetPosition();
         if (First == self) target = secondPos - Offset;
         else target = firstPos + Offset;
         return target;
     }
 
+    public bool MaxLengthReached()
+    {
+        return MaxLength != -1f && (First.GetPosition() - Second.GetPosition() + Offset).magnitude > MaxLength;
+    }
+
+    public void DestroyVisual()
+    {
+        if (visual != null)
+            visual.Destroy();
+    }
+
     public void Break()
     {
         BindMatrix.RemoveBind(First, Second);
-        if (visual != null)
-            visual.Destroy();
+        DestroyVisual();
     }
 }

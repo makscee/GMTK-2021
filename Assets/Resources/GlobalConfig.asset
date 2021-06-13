@@ -12,9 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4c5a7d16f347b8b2d4157ea74f8cb3, type: 3}
   m_Name: GlobalConfig
   m_EditorClassIdentifier: 
-  thrusterBindStr: 5
-  shapeBlockBindStr: 30
-  shapesBindStr: 15
+  thrusterBindStr: 20
+  shapeBlockBindStr: 20
+  shapesBindStr: 17
+  shapesWeakenedBindStr: 5
+  veinStaticBindStr: 10
+  packedShapeBindStr: 4
+  mouseBindStr: 15
+  blackHoleStr: 5
   bindBlock: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
   bindPreview: {r: 0, g: 0.68235296, b: 0.7176471, a: 0.44705883}
   bindShape: {r: 0, g: 0.68113214, b: 0.7169812, a: 0.87058824}
+  bindStrMult: 6
+  bindMaxAcc: 600
+  bindTargetDiv: 5.27
+  blinkDelay: 0.03
+  blinkDuration: 0.2
+  pulseDelay: 3
+  thrusterChance: 0.15
+  packedShapeMaxDistance: 5
+  mouseBindColor: {r: 1, g: 1, b: 1, a: 1}
+  packedShapeBindColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  blackHoleBindColor: {r: 0.9716981, g: 0, b: 0.69167703, a: 0.8235294}
+  asteroidAngleSpread: 15
+  asteroidSpawnDistance: 100
+  asteroidSpeed: 100
+  sectorSize: 150
+  viewDistance: 150
+  minMarkerDistance: 20
+  sectorVeinMin: 1
+  sectorVeinMax: 4
+  markerDistance: 9.81
+  blackHoleBindsDuration: 3
+  asteroidMaxDelay: 5
+  asteroidMinDelay: 1
+  camFollowSpeed: 10
+  asteroidMinAmount: 3
+  asteroidMaxAmount: 10

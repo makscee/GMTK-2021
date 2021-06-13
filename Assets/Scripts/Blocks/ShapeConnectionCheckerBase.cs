@@ -3,23 +3,40 @@
 public class ShapeConnectionCheckerBase : MonoBehaviour
 {
     [SerializeField] ShapeBlockConnectionChecker[] checkers = new ShapeBlockConnectionChecker[4];
-    [SerializeField] ShapeBlock block;
+    public ShapeBlock block;
 
     public void DisableDir(int dir)
     {
         checkers[dir].gameObject.SetActive(false);
     }
 
-    public void TryToConnect()
+    public bool TryToConnect()
     {
+        var result = false;
         foreach (var checker in checkers)
         {
-            if (checker.dot == null) continue;
+            if (checker.previewBind == null || !checker.previewBind.gameObject.activeSelf) continue;
             var b = checker.dot.GetComponentInParent<Block>();
             var bind = BindMatrix.AddBind(block, b, Utils.CoordsFromDir(checker.dir), GlobalConfig.Instance.shapesBindStr);
-            var visual = BindVisual.Create(block.transform, b.transform, GlobalConfig.Instance.bindShape);
+            var visual = BindVisual.Create(block, b, GlobalConfig.Instance.bindShape);
+            SharedObjects.instance.soundsPlayer.PlayConnectSound();
             bind.visual = visual;
-            block.additionalBinds.Add(bind);
+            result = true;
         }
+
+        return result;
+    }
+
+    public void SetPreviewsEnabled(bool value)
+    {
+        foreach (var checker in checkers)
+            checker.SetPreviewEnabled(value);
+    }
+
+    public void Destroy()
+    {
+        foreach (var checker in checkers)
+            if (checker.previewBind != null)
+                checker.previewBind.Destroy();
     }
 }
